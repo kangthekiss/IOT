@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h2= title
+
+block chart   
+    .container 
+        .chart-thinkspeak 
+            iframe(src="https://thingspeak.com/channels/434623/charts/1?bgcolor=%23FFFFFF&color=%23EE82EE&dynamic=true&results=10&title=%E0%B8%AD%E0%B8%B8%E0%B8%93%E0%B8%AB%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4&type=spline&xaxis=%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2&yaxis=%E0%B8%AD%E0%B8%B8%E0%B8%93%E0%B8%AB%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%28%E0%B9%80%E0%B8%8B%E0%B8%A5%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2%E0%B8%AA%29")

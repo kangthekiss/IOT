@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title Dashboard
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="/javascripts/Chart.bundle.js")
+    script(src="/javascripts/utils.js")
+    //- script(src="/javascripts/angular.js")
+    //- script(src="/javascripts/Chart.min.js")
+    //- script(src="/javascripts/angular-chart.js")
+
+  body(ng-app="myApp" ng-controller="myCtrl")  
+    .banner
+      img(src="", alt="")
+
+    .menu
+      a(href="/", class="btn btn-outline-primary") เช็คสถานะ
+      a(href="/on", class="btn btn-outline-success") เปิดไฟ
+      a(href="/off", class="btn btn-outline-danger") ปิดไฟ  
+      a(href="/thingSpeak", class="btn btn-outline-warning") อุณหภูมิ
+      a(href="/humidity", class="btn btn-outline-dark") ความชื้น
+      a(href="/temp", class="btn btn-outline-info") Chart
+
+    block content
+
+    block chart
+
+    
+
